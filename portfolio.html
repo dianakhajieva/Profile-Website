@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Diana Khajieva</title>
+<meta name="description" content="Diana Khajieva's data analytics portfolio — banking, education, and geospatial dashboard case studies." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Diana<span>.</span>Khajieva</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="index.html#experience" class="nav-link">Experience</a>
+      <a href="index.html#awards" class="nav-link">Awards</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="assets/Diana_Khajieva_Portfolio.pdf" class="btn btn-small btn-gold nav-cta" download>Download PDF</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Portfolio hero ===== -->
+  <section class="pf-hero">
+    <div class="bg-blob blob-float" data-parallax="0.08" style="width:520px;height:520px;top:-5%;right:-12%;opacity:.5;" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><linearGradient id="pfHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e3c26e" stop-opacity=".35"/><stop offset="100%" stop-color="#c9748c" stop-opacity=".28"/></linearGradient></defs>
+      <path fill="url(#pfHeroGrad)" transform="translate(100 100)" d="M45.7,-58.4C59.9,-49.7,72.5,-36.9,76.9,-21.5C81.3,-6.1,77.5,11.9,69.4,27.4C61.3,42.9,48.9,55.9,34.2,63.6C19.5,71.3,2.5,73.7,-14.5,71.9C-31.5,70.1,-48.5,64.1,-60.6,52.3C-72.7,40.5,-79.9,22.9,-80.6,4.9C-81.3,-13.1,-75.5,-31.5,-64.5,-45.5C-53.5,-59.5,-37.3,-69.1,-20.6,-76.6C-3.9,-84.1,13.3,-89.5,27.9,-84.4C42.5,-79.3,54.5,-63.7,45.7,-58.4Z"/></svg>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="pf-hero-inner">
+      <p class="eyebrow reveal">Selected Work</p>
+      <h1 class="reveal">Case studies from banking dashboards to geospatial models — the problem behind each one, and how I worked through it.</h1>
+      <p class="reveal">Four projects, four different data problems. Each one below walks through what I was asked (or asked myself), how I approached it, and what came out the other end.</p>
+      <div class="pf-hero-actions reveal">
+        <a href="assets/Diana_Khajieva_Portfolio.pdf" class="btn btn-navy" download>Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Case studies ===== -->
+  <section class="case-list">
+    <div class="section-inner">
+
+      <article class="case-study reveal">
+        <div class="case-copy">
+          <span class="case-number mono">01 / Retail</span>
+          <h2>DVD Rental Analysis</h2>
+          <div class="case-tags">
+            <span class="tag-outline">SQL</span><span class="tag-outline">PostgreSQL</span><span class="tag-outline">EDA</span>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Problem</span>
+            <p>A DVD rental business's raw relational database held the answers to which films and customer segments actually drove revenue — but only if someone was willing to query for them.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Approach</span>
+            <p>Wrote SQL directly against the PostgreSQL schema to examine customer behavior, rental demand, and film popularity, joining across customers, rentals, and inventory tables to trace revenue back to its source.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Result</span>
+            <p>A clear, query-backed picture of what was actually driving rental revenue — the foundation for any pricing or inventory decision that followed.</p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/KhDyanne" target="_blank" rel="noopener" class="link-arrow">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+        <div class="case-media">
+          <div class="case-media-frame"><img src="assets/project-dvd-rental.png" alt="DVD Rental Analysis project cover"></div>
+        </div>
+      </article>
+
+      <article class="case-study reveal">
+        <div class="case-copy">
+          <span class="case-number mono">02 / Banking</span>
+          <h2>Banking System Dashboard</h2>
+          <div class="case-tags">
+            <span class="tag-outline">SQL</span><span class="tag-outline">Power BI</span><span class="tag-outline">DAX</span>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Problem</span>
+            <p>Branch and regional performance data for a bank's international transfers business lived in scattered tables — leadership had no single view of revenue, profit, or which branches were actually performing.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Approach</span>
+            <p>Modeled the transaction data and built a Power BI dashboard with a live regional profit map across Uzbekistan's provinces, a monthly profit trend line, and a branch-by-branch ranking view — designed so leadership could filter by branch, employee, or workload without touching a query.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Result</span>
+            <p>A single dashboard surfacing $253M in revenue and $5M profit across 50K transactions, with regional and monthly breakdowns that make it obvious where performance is climbing or slipping.</p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/KhDyanne/Banking-Dashboard" target="_blank" rel="noopener" class="link-arrow">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+        <div class="case-media">
+          <div class="case-media-frame"><img src="assets/project-banking.png" alt="Banking System Power BI dashboard"></div>
+        </div>
+      </article>
+
+      <article class="case-study reveal">
+        <div class="case-copy">
+          <span class="case-number mono">03 / Education</span>
+          <h2>Student Performance Dashboard</h2>
+          <div class="case-tags">
+            <span class="tag-outline">Power BI</span><span class="tag-outline">Excel</span><span class="tag-outline">Data Modeling</span>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Problem</span>
+            <p>Academic staff needed a way to see where students across departments and semesters were struggling — not just final grades, but the trend behind them.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Approach</span>
+            <p>Cleaned and modeled records for nearly 1,800 students across 20 courses and 12 semesters, then built an interactive dashboard breaking down average GPA by semester, department, and enrollment year, plus a gender-split view for equity reporting.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Result</span>
+            <p>A self-serve dashboard (average GPA 3.17) that lets staff filter straight to the department or semester that needs attention, instead of requesting a custom report each time.</p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/KhDyanne" target="_blank" rel="noopener" class="link-arrow">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+        <div class="case-media">
+          <div class="case-media-frame"><img src="assets/project-student-performance.png" alt="Student Performance Power BI dashboard"></div>
+        </div>
+      </article>
+
+      <article class="case-study reveal">
+        <div class="case-copy">
+          <span class="case-number mono">04 / In Progress</span>
+          <h2>Traffic Congestion Dashboard</h2>
+          <div class="case-tags">
+            <span class="tag-outline">Python</span><span class="tag-outline">GIS</span>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Problem</span>
+            <p>City traffic data can point to exactly where and when congestion peaks — if it's mapped rather than left as raw sensor logs.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Approach</span>
+            <p>Currently analyzing city traffic patterns to identify congestion hotspots and peak-hour trends, building on the same GIS toolkit used for the Link Data coffee-shop location work.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-block-label">Status</span>
+            <p>Write-up and visuals launching soon — check GitHub for progress.</p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/KhDyanne/Traffic-Dashboard" target="_blank" rel="noopener" class="link-arrow">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+        <div class="case-media">
+          <div class="case-media-soon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+            <span class="mono" style="font-size:12px; letter-spacing:.12em;">IN PROGRESS</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="pf-cta">
+    <div class="section-inner">
+      <p class="eyebrow reveal" style="color:var(--gold-light);">Want the full picture?</p>
+      <h2 class="reveal">Grab the portfolio as a file</h2>
+      <div class="pf-cta-actions reveal">
+        <a href="assets/Diana_Khajieva_Portfolio.pdf" class="btn btn-navy" download>Download PDF</a>
+        <a href="index.html" class="btn btn-outline">Back to Profile</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo">Diana<span>.</span>Khajieva</a>
+    <nav class="footer-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#awards">Awards</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <p class="mono footer-copy">&copy; 2026 Diana Khajieva. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
